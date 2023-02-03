@@ -15,6 +15,9 @@ MODULE Henrys_law_ConstantsMod
   END TYPE Hcts_vars
   type (Hcts_vars) :: Hcts(nspecies_HL)
 
+  !Aqui eu introduzi uma mudanÃ§a
+
+
   !Name of species 
   CHARACTER(LEN=8),PARAMETER,DIMENSION(nspecies_HL) :: spc_name=(/ &
       'O3  ' & !001
@@ -136,7 +139,7 @@ MODULE Henrys_law_ConstantsMod
 !     of Potential Importance in 
 !     Environmental Chemistry (Version 3) 
 !     http://www.henrys-law.org 
-!     * indica artigos nao encontrados nesse endereço eletronico
+!     * indica artigos nao encontrados nesse endereï¿½o eletronico
   REAL,PARAMETER,DIMENSION(nspecies_HL) :: hstar=(/&
     1.10E-2              ,   & ! O3 - 001
     8.30E+4              ,   & ! H2O2 - 002
