@@ -8,7 +8,7 @@ MODULE Henrys_law_ConstantsMod
   !--- henry_coef =  hstar(ispc)* exp(dhr(ispc)*tcorr) * fct * corrh
   
   INTEGER,PARAMETER :: nspecies_HL=051
-  REAL   ,PARAMETER :: notfound = -1.
+  REAL   ,PARAMETER :: notfound = 0
   
   type Hcts_vars
    real :: hstar,dhr,ak0,dak
@@ -136,7 +136,7 @@ MODULE Henrys_law_ConstantsMod
 !     of Potential Importance in 
 !     Environmental Chemistry (Version 3) 
 !     http://www.henrys-law.org 
-!     * indica artigos nao encontrados nesse endereço eletronico
+!     * indica artigos nao encontrados nesse endereï¿½o eletronico
   REAL,PARAMETER,DIMENSION(nspecies_HL) :: hstar=(/&
     1.10E-2              ,   & ! O3 - 001
     8.30E+4              ,   & ! H2O2 - 002
